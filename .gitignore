@@ -1,0 +1,81 @@
+#version 2019-6-9
+# Build and Object Folders
+bin/
+obj/
+
+# Nuget packages directory
+packages/
+
+#visual studio
+.vs
+.vscode
+
+# User-specific files
+*.suo
+*.user
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+
+# Backup file  
+*.bak
+
+# picture dir temp file
+[Tt]humbs.db
+
+# berryinfo development
+tempfiles
+uploadfiles 
+TestResults
+*.log
+Outputs
+[Ll]ogs/
+
+#android
+.idea
+.gradle
+gradle/
+local.properties
+*.iml 
+PublishOutput/
+
+#frontend
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+tests/**/coverage/
+
+#ccflow
+DataUser/Temp/*.*
+DataUser/TempImageFiles/*.*
+DataUser/ReturnLog/
+bin
+obj
+bin
+obj
+bin
+obj

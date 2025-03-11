@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CCFlow.NetCore</name>
+    </assembly>
+    <members>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Portal_Login(System.String,System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="privateKey"></param>
+            <param name="userNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Portal_LoginOut">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Emp_Save(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            人员信息保存
+            </summary>
+            <param name="token"></param>
+            <param name="orgNo"></param>
+            <param name="userNo"></param>
+            <param name="userName"></param>
+            <param name="deptNo"></param>
+            <param name="kvs"></param>
+            <param name="stats"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Emp_Delete(System.String,System.String,System.String)">
+            <summary>
+            人员删除
+            </summary>
+            <param name="token">Token</param>
+            <param name="orgNo">组织编号</param>
+            <param name="userNo">人员编号</param>
+            <returns>reutrn 1=成功,  其他的标识异常.</returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Org_Save(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <returns>return 1 增加成功，其他的增加失败.</returns>
+            <summary>
+            集团模式下同步组织以及管理员信息
+            </summary>
+            <param name="token">Token</param>
+            <param name="orgNo">组织编号</param>
+            <param name="name">组织名称</param>
+            <param name="adminer">管理员账号</param>
+            <param name="adminerName">管理员名字</param>
+            <param name="keyVals">其他的值:@Leaer=zhangsan@Tel=12233333@Idx=1</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Dept_Save(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            保存部门,如果有此数据则修改,无此数据则增加.
+            </summary>
+            <param name="token">Token</param>
+            <param name="no">部门编号</param>
+            <param name="name">名称</param>
+            <param name="parentNo">父节点编号</param>
+            <param name="orgNo">组织编号</param>
+            <param name="keyVals">其他的值:@Leaer=zhangsan@Tel=18660153393@Idx=1</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Dept_Delete(System.String,System.String)">
+            <summary>
+            删除部门
+            </summary>
+            <param name="token">Token</param>
+            <param name="no">要删除的部门编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Station_Save(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            保存岗位, 如果有此数据则修改，无此数据则增加.
+            </summary>
+            <param name="token">Token</param>
+            <param name="orgNo">组织编号</param>
+            <param name="no">岗位编号</param>
+            <param name="name">岗位名称</param>
+            <param name="keyVals">其他值</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Port_Station_Delete(System.String,System.String)">
+            <summary>
+            删除岗位.
+            </summary>
+            <param name="no">删除指定的岗位编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_Start(System.String,System.String)">
+            <summary>
+            可以发起的流程
+            </summary>
+            <param name="token"></param>
+            <param name="domain">流程所属的域</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_Todolist(System.String,System.String)">
+            <summary>
+            待办
+            </summary>
+            <param name="token"></param>
+            <param name="domain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_Runing(System.String,System.String)">
+            <summary>
+            在途
+            </summary>
+            <param name="token"></param>
+            <param name="domain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_Draft(System.String,System.String)">
+            <summary>
+            草稿
+            </summary>
+            <param name="token"></param>
+            <param name="domain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.GenerFrmUrl(System.String,System.Int64,System.String,System.Int32,System.Int64)">
+            <summary>
+            打开的表单
+            </summary>
+            <param name="token"></param>
+            <param name="workID">工作实例WorkID</param>
+            <param name="flowNo">流程编号</param>
+            <param name="nodeID">节点ID</param>
+            <param name="fid">父WorkID</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_CreateBlankWorkID(System.String,System.String)">
+            <summary>
+            创建WorkID
+            </summary>
+            <param name="token"></param>
+            <param name="flowNo">流程编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_IsCanDealWork(System.String,System.Int64)">
+            <summary>
+            是否可以处理当前的工作
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_SetDraft(System.String,System.Int64,System.String)">
+            <summary>
+            设置草稿
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <param name="flowNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_Shift(System.String,System.Int64,System.String,System.String)">
+            <summary>
+            把当前工作移交给指定的人员
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <param name="toEmpNo"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_AddTodolist(System.String,System.Int64,System.String)">
+            <summary>
+            给当前的工作增加处理人
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <param name="empNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_GenerWorkFlow(System.String,System.Int64)">
+            <summary>
+            根据ID获取当前的流程实例信息
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_SaveParas(System.String,System.Int64,System.String)">
+            <summary>
+            保存参数到WF_GenerWorkFlow,用于方向条件的判断
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <param name="paras"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_SetTitle(System.String,System.Int64,System.String)">
+            <summary>
+            设置标题
+            </summary>
+            <param name="token"></param>
+            <param name="workID"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_SendWork(System.String,System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            发送接口
+            </summary>
+            <param name="token"></param>
+            <param name="flowNo">流程编号</param>
+            <param name="workID">工作实例WorkID</param>
+            <param name="toNodeID">到达的下一个节点</param>
+            <param name="toEmps">下一个节点的接收人</param>
+            <param name="paras">参数，保存到WF_GenerWorkFlow</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_GenerWorkFlow(System.String,System.String)">
+            <summary>
+            根据流程编号获取流程实例
+            </summary>
+            <param name="token"></param>
+            <param name="flowNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.DB_GenerWillReturnNodes(System.String,System.Int32,System.Int64,System.Int64)">
+            <summary>
+            获取当前节点可以退回到的节点集合
+            </summary>
+            <param name="token"></param>
+            <param name="nodeID">节点ID</param>
+            <param name="workID">工作实例WorkID</param>
+            <param name="fid">父WorkID</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Node_ReturnWork(System.String,System.Int64,System.Int32,System.Int32,System.String,System.String,System.Boolean)">
+            <summary>
+            当前节点执行退回操作
+            </summary>
+            <param name="token"></param>
+            <param name="workID">工作实例WorkID</param>
+            <param name="nodeID">当前节点ID</param>
+            <param name="returnToNodeID">退回到的节点</param>
+            <param name="returnToEmp">退回到的接收人</param>
+            <param name="msg">退回原因</param>
+            <param name="isBackToThisNode">是否原路返回到当前节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_DoPress(System.String,System.String,System.String)">
+            <summary>
+            催办
+            </summary>
+            <param name="token"></param>
+            <param name="workIDs">工作实例的WorkID集合</param>
+            <param name="msg">催办信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.CC_BatchCheckOver(System.String,System.String)">
+            <summary>
+            批量审核
+            </summary>
+            <param name="token"></param>
+            <param name="workIDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_BatchDeleteByFlag(System.String,System.String)">
+            <summary>
+            批量删除流程
+            </summary>
+            <param name="token"></param>
+            <param name="workIDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_BatchDeleteByReal(System.String,System.String,System.Boolean)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="token"></param>
+            <param name="workIDs">工作实例WorkIDs</param>
+            <param name="isDeleteSubFlows">是否删除子流程</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_BatchDeleteByFlagAndUnDone(System.String,System.String)">
+            <summary>
+            批量恢复逻辑删除的流程
+            </summary>
+            <param name="token"></param>
+            <param name="workIDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_DoUnSend(System.String,System.String)">
+            <summary>
+            批量撤回
+            </summary>
+            <param name="token"></param>
+            <param name="workids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_DeleteDraft(System.String,System.String)">
+            <summary>
+            批量删除草稿
+            </summary>
+            <param name="token"></param>
+            <param name="workids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Flow_DoFlowOver(System.String,System.String)">
+            <summary>
+            批量结束流程
+            </summary>
+            <param name="token"></param>
+            <param name="workids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Batch_Init(System.String)">
+            <summary>
+            批量处理
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.En_Node(System.String,System.Int32)">
+            <summary>
+            根据NodeID获取节点信息
+            </summary>
+            <param name="token"></param>
+            <param name="nodeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.En_Flow(System.String,System.String)">
+            <summary>
+            根据流程编号获取流程信息
+            </summary>
+            <param name="token"></param>
+            <param name="flowNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.WorkCheckModel_Init(System.String,System.Int32)">
+            <summary>
+            根据流程编号获取流程信息
+            </summary>
+            <param name="token"></param>
+            <param name="nodeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.DataUser.API.Controllers.APIController.Search_Init(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            查询
+            </summary>
+            <param name="key">关键字</param>
+            <param name="dtFrom">日期从</param>
+            <param name="dtTo">日期到</param>
+            <param name="scop">范围</param>
+            <param name="pageIdx">分页</param>
+            <returns></returns>
+        </member>
+        <member name="M:CCFlow.CcHandlerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{CCFlow.CcHandlerMiddleware})">
+            <summary>
+            构造方法。
+            注：参数都是注入的。
+            </summary>
+            <param name="next"></param>
+            <param name="optionsAccessor"></param>
+            <param name="dataProtectionProvider"></param>
+            <remarks>2019-7-29 zl</remarks>
+        </member>
+        <member name="M:CCFlow.CcHandlerMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invokes the logic of the middleware.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that completes when the middleware has completed processing.</returns>
+        </member>
+        <member name="M:CCFlow.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            配置服务将服务注册到依赖注入容器中。 
+            在Configure()之前执行。
+            </summary>
+        </member>
+        <member name="M:CCFlow.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            定义应用程序如何响应HTTP请求，以及配置HTTP流水线中的中间件
+            </summary>
+        </member>
+    </members>
+</doc>

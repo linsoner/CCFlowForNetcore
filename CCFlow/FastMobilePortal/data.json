@@ -1,0 +1,115 @@
+﻿{
+	"stateColumn": [
+		{
+			"colid": "1",
+			"title": "发起",
+			"num": "",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "2",
+			"title": "待办",
+			"num": "5",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "3",
+			"title": "在途",
+			"num": "10",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "4",
+			"title": "查询",
+			"icon": "icon-folder-alt"
+		}
+	],
+	"commonColumn": [
+		{
+			"colid": "1",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "2",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "3",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "4",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		}
+	],
+	"historyFlow": [
+		{
+			"colid": "1",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "2",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "3",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "4",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		}
+	],
+	"catSystem": [
+		{
+			"colid": "1",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "2",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "3",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "4",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		}
+	],
+	"oaSystem": [
+		{
+			"colid": "1",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "2",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "3",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		},
+		{
+			"colid": "4",
+			"title": "栏目1",
+			"icon": "icon-folder-alt"
+		}
+	]
+}
